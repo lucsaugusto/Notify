@@ -1,3 +1,105 @@
 body{
     margin: 0;
 }
+#mainGrid{
+    display: grid;
+    grid-template-areas: 'top' 'header' 'sub-header' 'section' 'article' 'footer';
+    grid-template-rows: 10px 510px 290px 360px 400px 110px;
+    grid-template-columns: 100vw;
+    margin: 0;
+}
+.top{
+    grid-area: top;
+    background-color: rgb(45, 200, 110);
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.banner{
+    background-image: url(https://lh3.googleusercontent.com/wUGWXupXtpQQ2fWz_VvR8n8gTusoNqpe6sRpbaZznUzsS8LcAu2cyOJRa818-ZZGE1go2L8o_a32GoEZlPGSj6PtepGl_jHyI68mfT7Z6nnlrrzi17m58UuL5TB7boL53QqiHYOCwMnvSaAQnMS_ly5K59fWtqkeZToNLtcyNd64moShAwn5W84UmjKUH5iVjcPrfpzF6QPPKT8S6m0m3llMmV8a0_BC5PuUeiTCGGi7RiChL1XGcWtQU1ph6dbvREhD8KXRWaQxqeDPSEFq9I0q47mjkd1zChIKvet4gZPO9VaxSQMWLK_kK35RJfgIzL9QRA7Q1gZqAZSYSqJXq_3V2u8oAGHzC1zhi0yq5nfwStiD419poUdAabRHALkEJsD5QsDiCM4tp98Gin4_VzCzknexUCiauXPPhXO8dfLPM2U8379R3I2HVzvhD4kdhq4NUf1taMb73qL8-R3mG0kl5PFp8vxtngphAI_rZSJK4aip_-WVr05tf1sTuwpY9n6g2VYKB0mRLGM1MX0vSO67bKKbhYipB015v3xD3Y9xSCOFEYAubCVqf7B8MPC5nDOC2KAENFYjaGvVgAxo186T-SjC52dQV0QkBQaL-mejtUeJWfhTnpTf9FXaAQU0XOKvhlJy8xCBiJaRNwTNacxaMCxOuNQ=w1326-h499-no);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slogan{
+    display: inline-block;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 380px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0;
+    height: 150px;
+}
+.slogan .logo h1{
+    font-family: 'Pacifico', cursive;
+    font-weight: 300;
+    font-size: 50pt;
+    color: white;
+}
+.slogan .logo h2{
+    font-family: 'Pacifico', cursive;
+    font-weight: 300;
+    font-size: 60pt;
+    color: rgb(45, 200, 110);
+}
+.slogan p{
+    font-family: 'Roboto';
+    font-size: 17pt;
+    text-align: left;
+    color: white;
+}
+header div ul{
+    padding: 0;
+    width: 160px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+button{
+    position:relative;
+    width: 45px;
+    height: 45px;
+    background-color: black;
+    border-color: transparent;
+    border-radius: 100px;
+    opacity: 0.5;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(45, 200, 110);
+    opacity: 1;
+}
+
+.hand img{
+    margin: 0;
+    width: auto;
+    height: 433px;
+    margin-top: 80px;
+}
+
+.sub-header{
+    grid-area: sub-header;
+    background-color: red;
+}
+section{
+    grid-area: section;
+    background-color: yellow;
+}
+article{
+    grid-area: article;
+    background-color: blue;
+}
+footer{
+    grid-area: footer;
+    background-color: black;
+}

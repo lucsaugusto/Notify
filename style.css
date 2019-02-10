@@ -309,5 +309,20 @@ article img:hover{
 /* FOOTER / Tem uma barra de navegação com tópicos importantes para contato... / -------------------- */
 footer{
     grid-area: footer;
-    background-color: black;
+    background-color: rgb(205, 205, 205);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer nav{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer nav a{
+    font-family: 'Roboto';
+    font-size: 12pt;
+    color: rgb(150, 150, 150);
+    text-decoration: none;
 }
